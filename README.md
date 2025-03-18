@@ -1,6 +1,10 @@
 # FetchFQfromENA
 
-A Python tool to fetch FASTQ files from ENA database
+A Python tool to fetch FASTQ files from [The European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home) using [wget](https://github.com/mirror/wget) or [aspera](https://github.com/IBM/aspera-cli). 
+
+>This project was completed with the assistance of [Trae CN](https://www.trae.com.cn/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot).
+
+
 
 ## Installation
 ```bash
