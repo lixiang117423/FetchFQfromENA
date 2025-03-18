@@ -1,2 +1,3 @@
 [console_scripts]
-fetch-fq = fetchFQfromENA.get_fq_file:main
+get_fq_file = fetchFQfromENA.get_fq_file:main
+get_fq_meta = fetchFQfromENA.get_fq_meta:main

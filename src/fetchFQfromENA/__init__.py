@@ -1,3 +1,1 @@
-from .get_fq_file import download_fastq
-
-__all__ = ['download_fastq', 'get_fq_meta']
+__all__ = ['get_fq_file', 'get_fq_meta']

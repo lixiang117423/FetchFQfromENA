@@ -75,15 +75,15 @@ def fetch_tsv(
         return None
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     parser = argparse.ArgumentParser(
         description='Download sequencing metadata TSV from ENA API'
     )
     parser.add_argument('-id', '--accession',
                         help='ENA accession number (required) (e.g. PRJNA123456)')
-    parser.add_argument('-o', '--output', default='./tmp',
-                        help='Output path (supports .tsv/.csv/.txt/.xlsx extensions, default: ./tmp/[accession].meta.tsv)')
+    parser.add_argument('-o', '--output', default='./',
+                        help='Output path (supports .tsv/.csv/.txt/.xlsx extensions, default: ./[accession].meta.tsv)')
     parser.add_argument('-s', '--save', nargs='+', default=['all'],
                         help='Fields to save (all|field1 field2), available fields: secondary_study_accession,sample_accession,secondary_sample_accession,experiment_accession,study_accession,submission_accession,tax_id,scientific_name,instrument_model,nominal_length,library_layout,library_source,library_selection,base_count,first_public,last_updated,study_title,experiment_alias,run_alias,fastq_bytes,fastq_md5,fastq_ftp,fastq_aspera,fastq_galaxy,submitted_bytes,submitted_md5,submitted_ftp,submitted_galaxy,submitted_format,sra_bytes,sra_md5,sra_ftp,sample_alias,broker_name,sample_title,nominal_sdev,bam_ftp,bam_bytes')
     args = parser.parse_args()
@@ -97,4 +97,7 @@ if __name__ == '__main__':
     
     result = fetch_tsv(args.accession, args.output, fields=args.save if 'all' not in args.save else None)
     if result:
-        print(f'TSV file saved to: {result}')
+        print(f'Meta information file saved to: {result}')
+
+if __name__ == '__main__':
+    main()
