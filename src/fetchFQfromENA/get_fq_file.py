@@ -99,7 +99,7 @@ def main():
         
         script_path.chmod(0o755)
         print(f'\n\033[32mDownload script generated: {script_path.resolve()}\033[0m')
-        print('Please run next command to download the FASTQ data:\n' + ' '.join(['bash', str(script_path)]))
+        print('Please run the next command to download the FASTQ data:\n' + ' '.join(['bash', str(script_path)]))
     else:
         # Execute commands sequentially
         print(f'\n\033[33mStarting direct download with {len(commands)} files\033[0m')

@@ -80,7 +80,7 @@ bash download_PRJNA510920_fastq_by_wget.sh
 get_fq_file -id PRJNA510920 -m save -t aspera -k ~/miniforge3/etc/asperaweb_id_dsa.openssh  -o /mnt/d/OneDrive/NAS
 
 Download script generated: /mnt/d/OneDrive/NAS/02.编程相关/FetchFQfromENA/download_PRJNA510920_fastq_by_aspera.sh
-Please run command to download the FASTQ data:
+Please run the next command to download the FASTQ data:
 bash download_PRJNA510920_fastq_by_aspera.sh
 ```
 
