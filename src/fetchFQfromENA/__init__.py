@@ -1,2 +1,1 @@
-# Package initialization
-__version__ = '0.1.0'
+from .get_fq_meta import fetch_tsv
