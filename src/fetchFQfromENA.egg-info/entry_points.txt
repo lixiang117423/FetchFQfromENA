@@ -1,0 +1,2 @@
+[console_scripts]
+fetch-fq = fetchFQfromENA.get_fq_file:main

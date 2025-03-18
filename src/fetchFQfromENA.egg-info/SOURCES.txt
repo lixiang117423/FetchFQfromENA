@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+src/fetchFQfromENA/__init__.py
+src/fetchFQfromENA/get_fq_file.py
+src/fetchFQfromENA/get_fq_meta.py
+src/fetchFQfromENA.egg-info/PKG-INFO
+src/fetchFQfromENA.egg-info/SOURCES.txt
+src/fetchFQfromENA.egg-info/dependency_links.txt
+src/fetchFQfromENA.egg-info/entry_points.txt
+src/fetchFQfromENA.egg-info/requires.txt
+src/fetchFQfromENA.egg-info/top_level.txt
+tests/test_ena_api.py
+tests/test_get_fq_file.py

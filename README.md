@@ -9,16 +9,9 @@ python setup.py install
 ```
 
 ## Usage Example
-```python
-from fetchFQfromENA import download_fastq
 
-download_fastq(accession='ERR000000', output_dir='./data')
-```
+### get the meta information of a run
 
-## Features
-- Multi-threaded downloads
-- Automatic file integrity verification
-- ENA metadata query support
 
 ## Requirements
 - Python 3.7+

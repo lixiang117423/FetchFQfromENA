@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: fetchFQfromENA
+Version: 0.1.0
+Summary: Retrieve FASTQ file meta information from ENA and download corresponding data.
+Home-page: https://github.com/yourusername/fetchFQfromENA
+Author: Xiang Li
+Author-email: lixiang117423@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pathlib
+Requires-Dist: argparse
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
+
+# FetchFQfromENA
+
+A Python tool to fetch FASTQ files from ENA database
+
+## Installation
+```bash
+pip install -r requirements.txt
+python setup.py install
+```
+
+## Usage Example
+
+### get the meta information of a run
+
+
+## Requirements
+- Python 3.7+
+- requests>=2.31.0
