@@ -73,9 +73,9 @@ options:
 ```bash
 get_fq_file -id PRJNA510920 -m save -t ftp -o ./
 
-Download script generated: /Users/lixiang/Desktop/download_PRJNA510920_fastq_by_wget.sh
-Please run the next command to download the FASTQ data:
-bash download_PRJNA510920_fastq_by_wget.sh
+# Download script generated: /Users/lixiang/Desktop/download_PRJNA510920_fastq_by_wget.sh
+# Please run the next command to download the FASTQ data:
+# bash download_PRJNA510920_fastq_by_wget.sh
 ```
 
 #### aspera
