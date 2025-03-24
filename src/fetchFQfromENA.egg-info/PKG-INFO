@@ -1,6 +1,6 @@
-Metadata-Version: 2.2
+Metadata-Version: 2.4
 Name: fetchFQfromENA
-Version: 0.1.4
+Version: 0.1.5
 Summary: Retrieve FASTQ file meta information from ENA and download corresponding data.
 Home-page: https://github.com/lixiang117423/fetchFQfromENA
 Author: Xiang Li
@@ -15,7 +15,11 @@ Dynamic: summary
 
 # FetchFQfromENA
 
-A Python tool to fetch FASTQ files from ENA database
+A Python tool to fetch FASTQ files from [The European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home) using [wget](https://github.com/mirror/wget) or [aspera](https://github.com/IBM/aspera-cli). 
+
+>This project was completed with the assistance of [Trae CN](https://www.trae.com.cn/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot).
+
+
 
 ## Installation
 ```bash
@@ -95,7 +99,7 @@ bash download_PRJNA510920_fastq_by_wget.sh
 get_fq_file -id PRJNA510920 -m save -t aspera -k ~/miniforge3/etc/asperaweb_id_dsa.openssh  -o /mnt/d/OneDrive/NAS
 
 Download script generated: /mnt/d/OneDrive/NAS/02.编程相关/FetchFQfromENA/download_PRJNA510920_fastq_by_aspera.sh
-Please run command to download the FASTQ data:
+Please run the next command to download the FASTQ data:
 bash download_PRJNA510920_fastq_by_aspera.sh
 ```
 
