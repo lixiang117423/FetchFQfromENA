@@ -2,7 +2,7 @@
 
 A Python tool to fetch FASTQ files from [The European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home) using [wget](https://github.com/mirror/wget) or [aspera](https://github.com/IBM/aspera-cli). 
 
->This project was completed with the assistance of [Trae CN](https://www.trae.com.cn/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot).
+>This project was developed with the assistance of [Trae CN](https://www.trae.com.cn/?utm_source=advertising&utm_medium=aibot_ug_cpa&utm_term=hw_trae_aibot).
 
 
 
@@ -90,5 +90,6 @@ get_fq_file -id PRJNA510920 -m save -t aspera -k ./asperaweb_id_dsa.openssh  -o 
 
 
 ## Requirements
+
 - Python 3.7+
 - requests>=2.31.0
