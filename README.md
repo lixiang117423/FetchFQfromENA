@@ -8,7 +8,7 @@ A Python tool to fetch FASTQ files from [The European Nucleotide Archive](https:
 
 ## Installation
 ```bash
-pip install fetchfqfromena
+pip3 install fetchfqfromena
 ```
 
 ## Usage Example
@@ -37,8 +37,8 @@ options:
 ```
 
 ```
-get_fq_meta -id PRJNA510920 -o /mnt/d/OneDrive/NAS/PRJNA510920.meta.txt
-# TSV file saved to: /mnt/d/OneDrive/NAS/PRJNA510920.meta.txt/PRJNA510920.meta.tsv
+get_fq_meta -id PRJNA510920 -o PRJNA510920.meta.txt
+# Meta information file saved to: PRJNA510920.meta.txt
 ```
 
 ### download FASTQ format data from ENA
@@ -71,21 +71,21 @@ options:
 #### wget
 
 ```bash
-get_fq_file -id PRJNA510920 -m save -t ftp -o /mnt/d/OneDrive/NAS
+get_fq_file -id PRJNA510920 -m save -t ftp -o ./
 
-Download script generated: /mnt/d/OneDrive/NAS/02.编程相关/FetchFQfromENA/download_PRJNA510920_fastq_by_wget.sh
-Please run next command to download the FASTQ data:
+Download script generated: /Users/lixiang/Desktop/download_PRJNA510920_fastq_by_wget.sh
+Please run the next command to download the FASTQ data:
 bash download_PRJNA510920_fastq_by_wget.sh
 ```
 
 #### aspera
 
 ```bash
-get_fq_file -id PRJNA510920 -m save -t aspera -k ~/miniforge3/etc/asperaweb_id_dsa.openssh  -o /mnt/d/OneDrive/NAS
+get_fq_file -id PRJNA510920 -m save -t aspera -k ./asperaweb_id_dsa.openssh  -o ./
 
-Download script generated: /mnt/d/OneDrive/NAS/02.编程相关/FetchFQfromENA/download_PRJNA510920_fastq_by_aspera.sh
-Please run the next command to download the FASTQ data:
-bash download_PRJNA510920_fastq_by_aspera.sh
+# Download script generated: /Users/lixiang/Desktop/download_PRJNA510920_fastq_by_aspera.sh
+# Please run the next command to download the FASTQ data:
+# bash download_PRJNA510920_fastq_by_aspera.sh
 ```
 
 
